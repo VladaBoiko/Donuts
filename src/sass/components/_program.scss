@@ -1,0 +1,403 @@
+.program .container {
+  padding-top: 16px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 77px;
+    padding-bottom: 50px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 15px;
+    padding-bottom: 41px;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+.program__title {
+  @include text('Caveat Brush', 24px, 400, 1.25);
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.81;
+    margin-bottom: 16px;
+  }
+}
+
+.program__text {
+  @include text('Montserrat', 16px, 400, 1.25);
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.program__text--top {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
+}
+
+.program__list {
+  margin-bottom: 16px;
+}
+
+.program__item {
+  @include text('Montserrat', 16px, 400, 1.25);
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.program__item:not(:last-child) {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
+}
+
+.program__text--bottom {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.program__readmore {
+  display: block;
+  text-decoration: none;
+  @include text('Caveat Brush', 18px, 400, 1.28);
+  color: var(--bcg-button-color);
+  margin-bottom: 55px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.program-event__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  height: 355px;
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    align-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 630px;
+    align-content: space-between;
+  }
+}
+
+.program-event__item {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fef3e4;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    height: 152px;
+    padding-top: 53px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 180px;
+    padding-top: 65px;
+  }
+
+  &--first {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+      margin-right: 140px;
+      margin-top: 50px;
+    }
+  }
+
+  &--second {
+    @media screen and (min-width: 1280px) {
+      margin-top: 40px;
+      margin-right: 140px;
+    }
+  }
+
+  &--second,
+  &--third {
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &--third {
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+      margin-top: 178px;
+    }
+  }
+
+  &--fourth {
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 25px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.program-event__item--first:before {
+  position: absolute;
+  left: 25px;
+  top: -35px;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/program/mobile/pic-1-min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/program/mobile/pic@2x-1-min.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 35px;
+    top: -36px;
+    width: 82px;
+    height: 90px;
+    background-image: url(../images/program/tablet/pic-3.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/tablet/pic@2x-3.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 41px;
+    top: -43px;
+    width: 97px;
+    height: 107px;
+    background-image: url(../images/program/desctop/pic-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/desctop/pic@2x-min.png);
+    }
+  }
+}
+
+.program-event__item--second:before {
+  position: absolute;
+  left: 25px;
+  top: -35px;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/program/mobile/pic-3-min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/program/mobile/pic@2x-3-min.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 39px;
+    top: -34px;
+    width: 74px;
+    height: 82px;
+    background-image: url(../images/program/tablet/pic-5.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/tablet/pic@2x-5.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 46px;
+    top: -40px;
+    width: 88px;
+    height: 97px;
+    background-image: url(../images/program/desctop/pic-2-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/desctop/pic@2x-2-min.png);
+    }
+  }
+}
+
+.program-event__item--third:before {
+  position: absolute;
+  left: 25px;
+  top: -35px;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/program/mobile/pic-2-min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/program/mobile/pic@2x-2-min.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 40px;
+    top: -28px;
+    width: 69px;
+    height: 76px;
+    background-image: url(../images/program/tablet/pic-6.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/tablet/pic@2x-6.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 48px;
+    top: -35px;
+    width: 83px;
+    height: 92px;
+    background-image: url(../images/program/desctop/pic-3-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/desctop/pic@2x-3-min.png);
+    }
+  }
+}
+
+.program-event__item--fourth:before {
+  position: absolute;
+  left: 25px;
+  top: -35px;
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-image: url(../images/program/mobile/pic-4-min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/program/mobile/pic@2x-4-min.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 41px;
+    top: -30px;
+    width: 70px;
+    height: 78px;
+    background-image: url(../images/program/tablet/pic-4.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/tablet/pic@2x-4.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 49px;
+    top: -35px;
+    width: 83px;
+    height: 92px;
+    background-image: url(../images/program/desctop/pic-1-min.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/program/desctop/pic@2x-1-min.png);
+    }
+  }
+}
+
+.program-event__title {
+  @include text('Caveat Brush', 18px, 400, 1.28);
+  color: #000000;
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+}
+
+.program-event__text {
+  @include text('Montserrat', 14px, 400, 1.2);
+  color: #000000;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.program-wrap {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-basis: calc((100% - 32px) / 2);
+
+    .program-wrap:not(:last-child) {
+      @media screen and (min-width: 768px) {
+        margin-right: 32px;
+      }
+    }
+  }
+}
+
+.program__textwrap {
+  @media screen and (min-width: 1280px) {
+    width: 392px;
+    margin-right: 142px;
+  }
+}

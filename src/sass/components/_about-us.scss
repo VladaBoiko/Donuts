@@ -1,0 +1,116 @@
+.about .container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+.about__item {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+.about__textwrap {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 392px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+}
+
+.about__title {
+  @include text('Caveat Brush', 24px, 400, 1.25);
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 1.81;
+  }
+}
+
+.about__text {
+  @include text('Montserrat', 16px, 400, 1.25);
+  color: var(--main-text-color);
+
+  @media screen and (min-width: 1280px) {
+    @include text('Montserrat', 18px, 400, 1.22);
+  }
+}
+
+.about__text--bottom {
+  margin-bottom: 12px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+}
+
+.about__readmore {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.about__pictures {
+  position: relative;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 279px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.about__pictures--second {
+  position: absolute;
+  left: 63px;
+  bottom: 9px;
+
+  @media screen and (min-width: 768px) {
+    left: 76px;
+    bottom: 11px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 114px;
+    bottom: 16px;
+  }
+}
+
+.about__link {
+  text-decoration: none;
+  @include text('Caveat Brush', 18px, 400, 1.28);
+  color: var(--bcg-button-color);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
